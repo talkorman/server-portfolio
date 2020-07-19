@@ -337,8 +337,6 @@
         $('<img/>').attr('src', 'images/bg.png').on('load', function() {
             $(this).remove();
             $('body').css('background-image', 'url(images/bg.png)');
-        });
-        $('body').ready(function() {
             setTimeout(() => {
                 $('#titleOpening').animate({
                     left: '15%'
