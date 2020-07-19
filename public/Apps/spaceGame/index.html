@@ -27,6 +27,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //variables declarations
+        for (let i = 0; i < 4; i++) {
+            $('<img/>').attr('src', 'images/rocket' + i + 'png').on('load', function() {
+                $(this).remove();
+            })
+        }
+
         var missile = $('#missile'),
             rotate = $("#rotate"),
             fire = $('#shoot'),
@@ -138,7 +144,7 @@
                 } else {
                     fireIndex = 0
                 }
-                missile.attr('src', 'images/rocket' + fireIndex + '.svg');
+                $(missile).attr('src', 'images/rocket' + fireIndex + '.svg');
             }, 25 - (delXY <= 10 ? delXY : 0));
 
             //landing listener

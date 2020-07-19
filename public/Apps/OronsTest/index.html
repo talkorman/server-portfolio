@@ -44,6 +44,7 @@
                     <button id="start" class="btn btn-success border-light" onclick="start()">התחל</button>
                     <br><br>
                     <h3 id="finale1"></h3>
+                    <div id="startAgain"></div>
                     <h3 id="finale2"></h3>
                     <h3 id="finale3"></h3>
                     <div id="list" tabindex="-1">
@@ -51,6 +52,7 @@
 
                         </ol>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -144,6 +146,14 @@
                 final.lastChild.innerHTML = answerIncorrect[i];
                 $(document).scrollTop($(document).height());
             };
+            var startAgain = document.createElement('button');
+            startAgain.innerHTML = 'לחץ כאן כדי להתחיל שוב';
+            document.querySelector('#startAgain').prepend(startAgain);
+            startAgain.addEventListener('click', reload);
+            startAgain.className = 'btn btn-success border-light';
+        }
+        var reload = function() {
+            location.reload();
         }
     </script>
 

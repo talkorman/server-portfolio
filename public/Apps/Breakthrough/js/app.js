@@ -1,5 +1,11 @@
 //The Breakout game by Tal Korman
 
+$('<audio></audio>').attr('src', 'audio/matka.mp3').on('load', function() {
+    $(this).remove();
+});
+$('<audio></audio>').attr('src', 'audio/brick.mp3').on('load', function() {
+    $(this).remove();
+});
 var xRatio = window.innerWidth,
     yRatio = window.innerHeight,
     brickWidth = xRatio * 0.9 / 20,
