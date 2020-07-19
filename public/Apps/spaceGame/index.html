@@ -153,7 +153,7 @@
                 } else {
                     fireIndex = 0
                 }
-                $(missile).attr('src', 'images/rocket' + fireIndex + '.svg');
+                document.querySelector('#missile').src = 'images/rocket' + fireIndex + '.svg';
             }, 30);
 
             //landing listener
