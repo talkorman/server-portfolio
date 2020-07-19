@@ -28,7 +28,7 @@
     <script>
         //variables declarations
         for (let i = 0; i < 4; i++) {
-            $('<img/>').attr('src', 'http://localhost:3000/images/rocket' + i + '.svg').on('load', function() {
+            $('<img/>').attr('src', 'images/rocket' + i + '.svg').on('load', function() {
                 $(this).remove();
             })
         }
@@ -144,7 +144,7 @@
                 } else {
                     fireIndex = 0
                 }
-                $(missile).attr('src', 'http://localhost:3000/images/rocket' + fireIndex + '.svg');
+                $(missile).attr('src', 'images/rocket' + fireIndex + '.svg');
             }, 25 - (delXY <= 10 ? delXY : 0));
 
             //landing listener

@@ -52,15 +52,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script>
-        $('<img/>').attr('src', 'http://localhost:3000/images/agala.png').on('load', function() {
+        $('<img/>').attr('src', 'images/agala.png').on('load', function() {
             $(this).remove();
         });
         for (let i = 0; i < 5; i++) {
-            $('<img/>').attr('src', 'http://localhost:3000/images/item' + i + '.png').on('load', function() {
+            $('<img/>').attr('src', 'images/item' + i + '.png').on('load', function() {
                 $(this).remove();
             });
         }
-        $('<audio></audio>').attr('src', 'http://localhost:3000/audio/cashier.mp3').on('load', function() {
+        $('<audio></audio>').attr('src', 'audio/cashier.mp3').on('load', function() {
             $(this).remove();
         });
 
@@ -72,7 +72,7 @@
             cashierSound = document.createElement('audio'),
             activate = false;
         agala = document.createElement('img');
-        agala.src = 'http://localhost:3000/images/agala.png';
+        agala.src = 'images/agala.png';
         agala.id = 'agala';
         var st = setInterval(() => {
             $('#start').fadeTo(100, 0.7).fadeTo(100, 1);
@@ -168,7 +168,7 @@
             };
             let col = ['red', 'green', 'yellow', 'blue', 'purple'];
             let item = document.createElement('img');
-            item.src = 'http://localhost:3000/images/item' + colIndex + '.png';
+            item.src = 'images/item' + colIndex + '.png';
             item.id = 'item' + colIndex;
             $(item).appendTo('#leftSide');
             let left = 350 + (colIndex * 10);
@@ -182,7 +182,7 @@
             colIndex++;
         }
         var cashier = function() {
-            cashierSound.src = 'http://localhost:3000/audio/cashier.mp3';
+            cashierSound.src = 'audio/cashier.mp3';
             $('body').append(cashierSound);
             cashierSound.play();
         }
