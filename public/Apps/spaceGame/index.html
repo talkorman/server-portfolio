@@ -30,11 +30,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //variables declarations
-        /*    for (let i = 0; i < 4; i++) {
-                $('<img/>').attr('src', 'images/rocket' + i + '.svg').on('load', function() {
-                    $(this).remove();
-                })
-            }*/
+        for (let i = 0; i < 4; i++) {
+            $('<img/>').attr('src', 'images/rocket' + i + '.svg').on('load', function() {
+                $(this).hide();
+            })
+        }
 
         $(document).ready(function() {
             $('#main').show();
