@@ -9,29 +9,38 @@
 </head>
 
 <body>
-    <div id="openScreen">
-        <h1>Exploration Mission</h1>
-        <h1 id="title">The Solar system</h1>
-        <button id="start">start</button>
-    </div>
-    <img id="missile" src="images/rocket0.svg" alt="">
-    <button id="reset" onclick="reset()">Test App</button>
-    <button id="shoot">Takeoff/Accelerate</button>
-    <button id="stop">Land</button>
-    <button id="rotate"></button>
-    <div>
-        <p id="messageArea"></p>
+    <div id="loading" style="font-size: largest;">Wait while loading...</div>
+    <div id="main" style="display: none;">
+        <div id="openScreen">
+            <h1>Exploration Mission</h1>
+            <h1 id="title">The Solar system</h1>
+            <button id="start">start</button>
+        </div>
+        <img id="missile" src="images/rocket0.svg" alt="">
+        <button id="reset" onclick="reset()">Test App</button>
+        <button id="shoot">Takeoff/Accelerate</button>
+        <button id="stop">Land</button>
+        <button id="rotate"></button>
+        <div>
+            <p id="messageArea"></p>
+        </div>
     </div>
     <br>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //variables declarations
-        for (let i = 0; i < 4; i++) {
-            $('<img/>').attr('src', 'images/rocket' + i + '.svg').on('load', function() {
-                $(this).remove();
-            })
-        }
+        /*    for (let i = 0; i < 4; i++) {
+                $('<img/>').attr('src', 'images/rocket' + i + '.svg').on('load', function() {
+                    $(this).remove();
+                })
+            }*/
+
+        $(document).ready(function() {
+            $('#main').show();
+            $('#loading').hide();
+        });
+
 
         var missile = $('#missile'),
             rotate = $("#rotate"),
