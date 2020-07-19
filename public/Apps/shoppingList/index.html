@@ -60,7 +60,7 @@
                 $(this).remove();
             });
         }
-        $('<audio></audio>').attr('src', 'audio/cashier.mp3').on('load', function() {
+        $('<audio></audio>').attr('src', 'http://localhost:3000/audio/cashier.mp3').on('load', function() {
             $(this).remove();
         });
 
@@ -72,7 +72,7 @@
             cashierSound = document.createElement('audio'),
             activate = false;
         agala = document.createElement('img');
-        agala.src = 'images/agala.png';
+        agala.src = 'http://localhost:3000/images/agala.png';
         agala.id = 'agala';
         var st = setInterval(() => {
             $('#start').fadeTo(100, 0.7).fadeTo(100, 1);
@@ -168,7 +168,7 @@
             };
             let col = ['red', 'green', 'yellow', 'blue', 'purple'];
             let item = document.createElement('img');
-            item.src = 'images/item' + colIndex + '.png';
+            item.src = 'http://localhost:3000/images/item' + colIndex + '.png';
             item.id = 'item' + colIndex;
             $(item).appendTo('#leftSide');
             let left = 350 + (colIndex * 10);
@@ -182,7 +182,7 @@
             colIndex++;
         }
         var cashier = function() {
-            cashierSound.src = 'audio/cashier.mp3';
+            cashierSound.src = 'http://localhost:3000/audio/cashier.mp3';
             $('body').append(cashierSound);
             cashierSound.play();
         }
