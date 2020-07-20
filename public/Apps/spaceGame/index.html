@@ -164,17 +164,19 @@
             //rendering the graphics according to the changes
             var frame = setInterval(function() {
                 //fire framing
-
-                if (flyMode) {
-                    if (fireIndex < 3) {
-                        fireIndex++;
+                setTimeout(() => {
+                    if (flyMode) {
+                        if (fireIndex < 3) {
+                            fireIndex++;
+                        } else {
+                            fireIndex = 1
+                        }
                     } else {
-                        fireIndex = 1
+                        fireIndex = 0
                     }
-                } else {
-                    fireIndex = 0
-                }
-                document.querySelector('#missile').src = 'images/rocket' + fireIndex + '.svg';
+                    document.querySelector('#missile').src = 'images/rocket' + fireIndex + '.svg';
+
+                }, 25);
 
                 //messaging
                 if (messageIndex !== _messageIndex) {
