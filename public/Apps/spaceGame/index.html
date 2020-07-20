@@ -131,11 +131,7 @@
 
             //when pressing takeOff
             fire.click(function() {
-                var firing = setInterval(fireFrame, 25);
-                setTimeout(() => {
-                    clearInterval(firing);
-                    setInterval(fireFrame, 25);
-                }, 5000);
+                flyMode = true;
                 setTimeout(() => {
                     if (!landing) {
                         clearInterval(firing);
@@ -159,8 +155,16 @@
                 landing = false;
             });
 
-            //updating the fire engine
-            var fireFrame = function() {
+
+            //landing listener
+            home.click(function() {
+                landing = true
+            });
+
+            //rendering the graphics according to the changes
+            var frame = setInterval(function() {
+                //fire framing
+
                 if (flyMode) {
                     if (fireIndex < 3) {
                         fireIndex++;
@@ -171,15 +175,7 @@
                     fireIndex = 0
                 }
                 document.querySelector('#missile').src = 'images/rocket' + fireIndex + '.svg';
-            };
 
-            //landing listener
-            home.click(function() {
-                landing = true
-            });
-
-            //rendering the graphics according to the changes
-            var frame = setInterval(function() {
                 //messaging
                 if (messageIndex !== _messageIndex) {
                     message.text(messageContent[messageIndex]);
