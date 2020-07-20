@@ -66,7 +66,7 @@
             outer = true,
             planets = 0,
             landing = false,
-            firing,
+            fireTime = 10000,
             messageContent = ['press the button to take off',
                 'you can go around the earth to see the view',
                 'for accelerating press accelerate',
@@ -131,6 +131,22 @@
 
             //when pressing takeOff
             fire.click(function() {
+                var firing = setInterval(fireFrame, 25);
+                setTimeout(() => {
+                    clearInterval(firing);
+                    setInterval(fireFrame, 25);
+                }, 5000);
+                setTimeout(() => {
+                    if (!landing) {
+                        clearInterval(firing);
+                    };
+                    $(missile).attr({
+                        'src': 'images/rocket0.svg'
+                    });
+                    if (fireTime > 1000) {
+                        fireTime -= 1000
+                    };
+                }, fireTime);
                 if (messageIndex == 0) {
                     messageIndex = 1;
                 };
@@ -144,7 +160,7 @@
             });
 
             //updating the fire engine
-            firing = setInterval(function() {
+            var fireFrame = function() {
                 if (flyMode) {
                     if (fireIndex < 3) {
                         fireIndex++;
@@ -155,7 +171,7 @@
                     fireIndex = 0
                 }
                 document.querySelector('#missile').src = 'images/rocket' + fireIndex + '.svg';
-            }, 30);
+            };
 
             //landing listener
             home.click(function() {
