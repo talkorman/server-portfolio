@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tal's Potfolio</title>
+</head>
+
+<body>
+    <img id="titleOpening" src="images/titleOpening.png" />
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/title2.png" class="title">
+                </div>
+                <div class="col-5"></div>
+                <div class="navBar col-5">
+                    <nav>
+                        <a class="nuvbutt" href="#about">about</a>
+                        <a class="nuvbutt" href="#gallery">gallery</a>
+                        <a class="nuvbutt" href="#contact">contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="leftContent col-md-6"><img src="images/myImage.png" class="me"></div>
+
+                <div class="rightContent col-md-6">
+                    <p id="creative">CREATIVE</p>
+                    <p id="developer">D E V E L O P E R</p>
+                    <p id="sensible">SENSIBLE TO FRONTEND</p>
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div style="height: 30px;"></div>
+                <div id="about" class="col-md-6 text-dark p-5">
+                    <h2 style="text-align: center;">About</h2>
+                    <p>Hello there, I'm Tal Korman, Student at HackerU college, studying Mobile apps development for Android and IOS. My coding jurney began at the 80s, while practicing coding games in BASIC language on Dragon 64 computer and Apple 2E, that
+                        was a great time for developing Karate, Space and Quest games from scratch. At high school I learned Pascal software and continued studying Electronics Practical Engineering, graduated with a final project of programed automotive
+                        robot for delivering objects from one place to another, coded with Assembly language on 8051 CPU. Many years passed and on January 2019 I took some online courses on Javascript language and developed a complicated app for Loading
+                        containers (see Loading Optimizator at <a href="#gallery">gallery</a>). Recently I've completed another Javascript course at HackerU college which helped me to improve and increase my web coding and design skills. Currently I study
+                        Java at HackerU and looking forward to develop new ideas of apps on mobile devices.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="logo2">
+                        <img class="logos" src="images/javascript.svg" alt="javascript">
+                        <img class="logos" src="images/html-5.svg" alt="javascript">
+                        <img class="logos" src="images/css-5.svg" alt="javascript">
+                        <img class="logos" src="images/bootstrap-4.svg" alt="javascript">
+                        <img class="logos" style="width: 200px;" src="images/jquery.svg" alt="javascript">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="gallery" class="container">
+            <div class="row">
+                <div id="cardsArea" class="col-md-12">
+                    <h2 class="text-light" style="text-align:center">Gallery</h2>
+                    <br><br>
+                    <div class="cards">
+                        <div class="card" id="b1">
+                            <div class="imageFrame"><img class="card-img-top" src="images/cont.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Loading Optimizator</h5>
+
+                                <p class="card-text"> I'm excited to introduce to you my first Javascript app, <span id="dots">...</span><span id="more" style="display: none;">following an old idea that came up while calculating and loading containers in China, struggeling on how to insert the total quantity of the goods to a container with minimal wasted spaces. The app will do for you the frustrating job and provide you the best configuration of how to load your consignment. The app's AI logic which was my top developing challange so far is doing an imitation of the human logic for achieving the same task. On the current version for a security reason I moved the AI module from the browser side to a server with Node js and Express js. I used Threejs  library for rendering the 3D scene and developed a mouse and touch mechanism control for orientation in 3 dimension enviroment which was a bit tough geometrical challange to achieve a high level of smoothness orientation. The styling was modified to fit variety of screen sizes as well as mobile devices.
+                                The software is still been developed and more features are planned to be added... 
+                                For ilustrating the problem that this app can solve, here are some containers loading photos that I took in China.
+                                <img src="images/loading1.jpg" alt="loading">
+                                <img src="images/loading2.jpg" alt="loading">
+                                <img src="images/loading3.jpg" alt="loading">
+                                <img src="images/loading4.jpg" alt="loading">
+                                <img src="images/loading5.jpg" alt="loading">
+                                <img src="images/loading6.jpg" alt="loading">
+                                </span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img src="images/jquery.svg" alt="">
+                                    <img style="height:50px; width: 100px" src="images/three.png" alt="">
+                                    <img style="width: 80px" src="images/nodejs.svg" alt="">
+                                    <img src="images/express.svg" alt="">
+                                </div>
+                                <a href="https://hamchala.herokuapp.com/" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                        <div class="card" id="b2">
+                            <div class="imageFrame"><img class="card-img-top" src="images/space.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Space Voyage</h5>
+                                <p class="card-text">This app was made as a homework project, at the beginning it was suppose <span id="dots">...</span><span id="more" style="display: none;">to ba a balistic missile demonstration but during the development somehow the idea of traveling in space took over.
+                                Actually it is an educational scientific game for kids to learn about the appearance and the locations of the planets in the solar system.
+                            Need to navigate the rocket according to the instruction notes on the screen the animation effects were created by
+                        shifting layers according to the rocket location, speed and direction.</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img src="images/jquery.svg" alt="">
+                                </div>
+                                <a href="Apps/spaceGame/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                        <div class="card" id="b3">
+                            <div class="imageFrame"><img class="card-img-top" src="images/Break.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Break them all</h5>
+                                <p class="card-text">This app algorithm and code was developed from scratch <span id="dots">...</span><span id="more" style="display: none;">It's the famous classic game from the 80s. it works smooth with some extra unpredictability that adding fun to the gaming experience.</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img src="images/jquery.svg" alt="">
+                                </div>
+                                <a href="Apps/Breakthrough/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                        <div class="card" id="b4">
+                            <div class="imageFrame"><img class="card-img-top" src="images/oron.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oron's <br>Challange</h5>
+                                <p class="card-text">This app is a time laps mathematic test for kids. The scoring<span id="dots">...</span><span id="more" style="display: none;"> logic is: As much challanging the operator is so the number of scores is for each exercise<span><p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img style="width: 40px" src="images/bootstrap-4.svg" alt="">
+                                </div>
+                                <a href="Apps/OronsTest/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                        <div class="card" id="b5">
+                            <div class="imageFrame"><img class="card-img-top" src="images/shopping.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Shopping list</h5>
+                                <p class="card-text">Write your list for shopping with extra features of Local storage<span id="dots">...</span><span id="more" style="display: none;"> use for keeping your data even if the cumputer was shut down and cool animation. you can add and remove items to the list and for better organization there is a rule to write the multiply 'X' (capital X) between the quantity and the item name.</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img style="width: 40px" src="images/bootstrap-4.svg" alt="">
+                                    <img src="images/jquery.svg" alt="">
+                                    <p style="font-weight: bold; font-size: large;">Local Storage</p>
+                                </div>
+                                <a href="Apps/shoppingList/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+
+                        </div>
+                        <div class="card" id="b6">
+                            <div class="imageFrame"><img class="card-img-top" src="images/screen.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Screen Builder</h5>
+                                <p class="card-text">A cool app for creating squares. styled with Bootstrap. you can chose the<span id="dots">...</span><span id="more" style="display: none;">  colors, elements, and attributes of square elements and create amazing screens.</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img style="width: 40px" src="images/bootstrap-4.svg" alt="">
+
+                                </div>
+                                <a href="Apps/ScreenBuilder/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                        <div class="card" id="b7">
+                            <div class="imageFrame"><img class="card-img-top" src="images/calculator.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pass calculator</h5>
+                                <p class="card-text">App which combine code plus calculator. The calculator window will apear<span id="dots">...</span><span id="more" style="display: none;">  on the left area of the screen once the password has been validated (user:"hackeru" Pass:"hackeru123").</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                    <img src="images/javascript.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <img style="width: 40px" src="images/bootstrap-4.svg" alt="">
+                                </div>
+                                <a href="Apps/calculator/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+
+                        </div>
+                        <div class="card" id="B8">
+                            <div class="imageFrame"><img class="card-img-top" src="images/mySite.png" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Promotion page</h5>
+                                <p class="card-text">This page promoting my working experience in China, there are <span id="dots">...</span><span id="more" style="display: none;">some more features need to be added but actually I had to add this one for making the cards quantity even...</span></p>
+                                <p class="rm" onclick="readMore(this)" style="cursor:pointer">read more</p>
+                                <div class="logoCard1">
+                                    <img src="images/html-5.svg" alt="">
+                                    <img src="images/css-5.svg" alt="">
+                                </div>
+                                <div class="logoCard2">
+                                    <p style="font-weight: bold; font-size: large;">CSS grid</p>
+                                </div>
+                                <a href="Apps/mySite/index.html" class="btn btn-info">Goto App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="contact" class="container">
+            <div class="row text-light">
+                <div class="col-md-12">
+                    <br>
+                    <h2>Contact</h2>
+                    <p class="">Please fill your details and we'll contact you</p>
+                    <p id="warning"></p>
+                    <div class="col-md-12">
+                        <form class="form-horizontal text-light" action="#">
+                            <div class="form-group">
+                                <label for="email">First name</label><br>
+                                <div class="field">
+                                    <input type="email" class="form-control" id="firstName" placeholder="first name"></div>
+                                <div id="firstName1" style="display: inline-block;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Last name</label><br>
+                                <div class="field">
+                                    <input type="email" class="form-control" id="lastName" placeholder="last name"></div>
+                                <div id="lastName1" style="display: inline-block;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label><br>
+                                <div class="field">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com"></div>
+                                <div id="email1" style="display: inline-block;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Enter a password</label><br>
+                                <div class="field">
+                                    <input type="password" class="form-control" id="pass" placeholder="Use 8 digits letters and numbers"></div>
+                                <div id="pass1" style="display: inline-block;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Reenter password</label><br>
+                                <div class="field">
+                                    <input type="password" class="form-control" id="conpass" placeholder="repeat password"></div>
+                                <div id="conpass1" style="display: inline-block;"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Leave us a message</label><br>
+                                <div class="field">
+                                    <textarea class="form-control" id="message" rows="3"></textarea></div>
+                            </div>
+                            <label for="agree">
+                        <input type="checkbox" id="agree" name="agree">
+                        mark if are you agree with our terms of use...</label>
+                        </form>
+                        <button class="btn-md text-dark m-2" id="validation"><a href="#contact">submit</a></button>
+
+                    </div>
+                </div>
+            </div> <br>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer class="container footer text-light">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Tal Korman</p>
+                <p>Tel - 972-55-5576394</p>
+                <p>talkorman1@gmail.com</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        var _0x5614 = ["\x6C\x6F\x61\x64", "\x72\x65\x6D\x6F\x76\x65", "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x69\x6D\x61\x67\x65", "\x75\x72\x6C\x28\x69\x6D\x61\x67\x65\x73\x2F\x62\x67\x2E\x70\x6E\x67\x29", "\x63\x73\x73", "\x62\x6F\x64\x79", "\x6F\x6E", "\x73\x72\x63", "\x69\x6D\x61\x67\x65\x73\x2F\x62\x67\x2E\x70\x6E\x67", "\x61\x74\x74\x72", "\x3C\x69\x6D\x67\x2F\x3E", "\x31\x35\x25", "\x61\x6E\x69\x6D\x61\x74\x65", "\x23\x74\x69\x74\x6C\x65\x4F\x70\x65\x6E\x69\x6E\x67", "\x32\x30\x30\x70\x78", "\x33\x35\x70\x78", "\x32\x30\x70\x78", "\x61\x62\x73\x6F\x6C\x75\x74\x65", "\x2A", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65", "\x6C\x65\x6E\x67\x74\x68", "\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79", "\x73\x74\x79\x6C\x65", "\x76\x69\x73\x69\x62\x6C\x65", "\x73\x68\x6F\x77", "\x6C\x6F\x67", "\x72\x65\x61\x64\x79", "", "\x77\x69\x64\x74\x68", "\x23\x63\x61\x72\x64\x73\x41\x72\x65\x61", "\x2E\x63\x61\x72\x64", "\x70\x78", "\x69\x64", "\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65", "\x63\x68\x69\x6C\x64\x72\x65\x6E", "\x6E\x65\x78\x74\x45\x6C\x65\x6D\x65\x6E\x74\x53\x69\x62\x6C\x69\x6E\x67", "\x6E\x65\x78\x74\x53\x69\x62\x6C\x69\x6E\x67", "\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64", "\x64\x69\x73\x70\x6C\x61\x79", "\x6E\x6F\x6E\x65", "\x69\x6E\x6C\x69\x6E\x65", "\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C", "\x52\x65\x61\x64\x20\x6D\x6F\x72\x65", "\x68\x72\x65\x66", "\x23", "\x52\x65\x61\x64\x20\x6C\x65\x73\x73", "\x6F\x70\x61\x63\x69\x74\x79", "\x31", "\x73\x6F\x6C\x69\x64\x20\x72\x67\x62\x28\x38\x38\x2C\x20\x38\x38\x2C\x20\x31\x37\x33\x29\x20\x32\x70\x78", "\x6D\x6F\x75\x73\x65\x6F\x76\x65\x72", "\x30\x2E\x38", "\x6D\x6F\x75\x73\x65\x6C\x65\x61\x76\x65", "\x2E\x69\x6E\x66\x69\x65\x6C\x64", "\x61\x64\x64\x43\x6C\x61\x73\x73", "\x69\x6E\x70\x75\x74", "\x66\x6F\x63\x75\x73", "\x76\x61\x6C", "\x23\x66\x69\x72\x73\x74\x4E\x61\x6D\x65", "\x74\x72\x69\x6D", "\x23\x6C\x61\x73\x74\x4E\x61\x6D\x65", "\x23\x65\x6D\x61\x69\x6C", "\x23\x70\x61\x73\x73", "\x23\x63\x6F\x6E\x70\x61\x73\x73", "\x23\x6D\x65\x73\x73\x61\x67\x65", "\x63\x68\x65\x63\x6B\x65\x64", "\x70\x72\x6F\x70", "\x23\x61\x67\x72\x65\x65", "\x77\x61\x72\x6E\x69\x6E\x67", "\x65\x6D\x70\x74\x79", "\x61\x70\x70\x65\x6E\x64\x54\x6F", "\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x78\x2E\x70\x6E\x67\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x77\x69\x64\x74\x68\x3A\x32\x30\x70\x78\x3B\x20\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x22\x20\x3E", "\x67\x6F\x6F\x64", "\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73", "\x65\x72\x72\x6F\x72", "\x63\x6F\x6E\x66\x69\x72\x6D", "\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x76\x2E\x70\x6E\x67\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x77\x69\x64\x74\x68\x3A\x32\x30\x70\x78\x3B\x20\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x22\x3E", "\x61\x67\x72\x65\x65", "\x66\x69\x72\x73\x74\x4E\x61\x6D\x65", "\x76\x61\x6C\x75\x65\x20\x69\x73\x3A\x20", "\x76\x61\x6C\x75\x65", "\x74\x65\x73\x74", "\x6C\x61\x73\x74\x4E\x61\x6D\x65", "\x65\x6D\x61\x69\x6C", "\x70\x61\x73\x73", "\x63\x6F\x6E\x70\x61\x73\x73", "\x62\x6C\x75\x72", "\x23\x77\x61\x72\x6E\x69\x6E\x67", "\x61\x67\x72\x65\x65\x3A\x20", "\x3C\x70\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x65\x78\x74\x2D\x64\x61\x6E\x67\x65\x72\x20\x62\x67\x2D\x6C\x69\x67\x68\x74\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x22\x3E\x50\x6C\x65\x61\x73\x65\x20\x61\x67\x72\x65\x65\x20\x77\x69\x74\x68\x20\x74\x68\x65\x20\x74\x65\x72\x6D\x73\x2E\x2E\x2E\x3C\x2F\x70\x3E", "\x61\x70\x70\x65\x6E\x64", "\x6D\x65\x73\x73\x61\x67\x65", "\x53\x75\x62\x6D\x69\x74\x74\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x74\x68\x65\x20\x66\x6F\x6C\x6C\x6F\x77\x69\x6E\x67\x20\x6F\x62\x6A\x65\x63\x74\x3A\x20\x0A\x3A", "\x3C\x70\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x65\x78\x74\x2D\x73\x75\x63\x63\x65\x73\x73\x20\x62\x67\x2D\x6C\x69\x67\x68\x74\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x22\x3E\x57\x65\x6C\x63\x6F\x6D\x20\x74\x6F\x20\x6F\x75\x72\x20\x67\x72\x6F\x75\x70\x2E\x20\x77\x65\x20\x77\x69\x6C\x6C\x20\x63\x6F\x6E\x74\x61\x63\x74\x20\x79\x6F\x75\x20\x73\x68\x6F\x72\x74\x6C\x79\x3C\x2F\x70\x3E", "\x73\x75\x62\x6D\x69\x74", "\x66\x6F\x72\x6D", "\x3C\x70\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x65\x78\x74\x2D\x64\x61\x6E\x67\x65\x72\x20\x62\x67\x2D\x6C\x69\x67\x68\x74\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x22\x3E\x54\x68\x65\x20\x64\x65\x74\x61\x69\x6C\x73\x20\x61\x72\x65\x20\x69\x6E\x63\x6F\x72\x72\x65\x63\x74\x2E\x2E\x2E\x3C\x2F\x70\x3E", "\x63\x6C\x69\x63\x6B", "\x23\x76\x61\x6C\x69\x64\x61\x74\x69\x6F\x6E"];
+        $(_0x5614[10])[_0x5614[9]](_0x5614[7], _0x5614[8])[_0x5614[6]](_0x5614[0], function() {
+            $(this)[_0x5614[1]]();
+            $(_0x5614[5])[_0x5614[4]](_0x5614[2], _0x5614[3])
+        });
+        $(_0x5614[5])[_0x5614[26]](function() {
+            setTimeout(() => {
+                $(_0x5614[13])[_0x5614[12]]({
+                    left: _0x5614[11]
+                }, 1000);
+                setTimeout(() => {
+                    $(_0x5614[13])[_0x5614[12]]({
+                        width: _0x5614[14],
+                        left: _0x5614[15],
+                        top: _0x5614[16],
+                        position: _0x5614[17]
+                    }, 1000);
+                    setTimeout(() => {
+                        let _0x60ecx1 = document[_0x5614[19]](_0x5614[18]);
+                        $(_0x5614[13])[_0x5614[1]]();
+                        for (let _0x60ecx2 = 0; _0x60ecx2 < _0x60ecx1[_0x5614[20]]; _0x60ecx2++) {
+                            _0x60ecx1[_0x60ecx2][_0x5614[22]][_0x5614[21]] = _0x5614[23]
+                        };
+                        console[_0x5614[25]](_0x5614[24])
+                    }, 1000)
+                }, 2000)
+            }, 1000)
+        });
+        var tempBtnText = {},
+            cardId = _0x5614[27],
+            read = false,
+            cardsInline, onCard = false;
+        var cardsAreaWidth = $(_0x5614[29])[_0x5614[28]](),
+            cardWidth = $(_0x5614[30])[_0x5614[28]]();
+        if (cardsAreaWidth > 4 * cardWidth) {
+            cardsInline = 4
+        } else {
+            if (cardsAreaWidth > 3 * cardWidth) {
+                cardsInline = 3
+            } else {
+                if (cardsAreaWidth > 2 * cardWidth) {
+                    cardsInline = 2
+                } else {
+                    cardsInline = 1
+                }
+            }
+        };
+        let cardLeftMargin = (cardsAreaWidth - cardsInline * cardWidth) / (cardsInline + 1);
+        console[_0x5614[25]](cardsAreaWidth, cardWidth, cardsInline, cardLeftMargin);
+        $(_0x5614[30])[_0x5614[4]]({
+            '\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74': cardLeftMargin + _0x5614[31]
+        });
+        var readMore = function(_0x60ecxc) {
+            tempBtnText = _0x60ecxc;
+            cardId = _0x60ecxc[_0x5614[33]][_0x5614[33]][_0x5614[32]];
+            var _0x60ecxd = _0x60ecxc[_0x5614[33]][_0x5614[37]][_0x5614[36]][_0x5614[35]][_0x5614[34]][0],
+                _0x60ecxe = _0x60ecxd[_0x5614[36]];
+            if (_0x60ecxd[_0x5614[22]][_0x5614[38]] === _0x5614[39]) {
+                _0x60ecxd[_0x5614[22]][_0x5614[38]] = _0x5614[40];
+                _0x60ecxc[_0x5614[41]] = _0x5614[42];
+                _0x60ecxe[_0x5614[22]][_0x5614[38]] = _0x5614[39];
+                location[_0x5614[43]] = _0x5614[44] + cardId;
+                read = false
+            } else {
+                read = true;
+                _0x60ecxd[_0x5614[22]][_0x5614[38]] = _0x5614[39];
+                _0x60ecxc[_0x5614[41]] = _0x5614[45];
+                _0x60ecxe[_0x5614[22]][_0x5614[38]] = _0x5614[40]
+            }
+        };
+        $(_0x5614[30])[_0x5614[49]](function() {
+            if (!onCard) {
+                return
+            };
+            this[_0x5614[22]][_0x5614[46]] = _0x5614[47];
+            cardId = this[_0x5614[32]];
+            $(this)[_0x5614[4]]({
+                '\x62\x6F\x72\x64\x65\x72': _0x5614[48]
+            })
+        });
+        $(_0x5614[30])[_0x5614[51]](function() {
+            console[_0x5614[25]](cardId);
+            $(this)[_0x5614[4]]({
+                '\x62\x6F\x72\x64\x65\x72': _0x5614[39]
+            });
+            if (read) {
+                location[_0x5614[43]] = _0x5614[44] + cardId;
+                read = false;
+                onCard = false
+            };
+            this[_0x5614[22]][_0x5614[46]] = _0x5614[50];
+            var _0x60ecxf = this;
+            setTimeout(function() {
+                var _0x60ecxd = _0x60ecxf[_0x5614[34]][1][_0x5614[34]][1][_0x5614[34]][0],
+                    _0x60ecxe = _0x60ecxd[_0x5614[36]],
+                    _0x60ecxc = _0x60ecxd[_0x5614[33]][_0x5614[36]];
+                _0x60ecxd[_0x5614[22]][_0x5614[38]] = _0x5614[40];
+                _0x60ecxe[_0x5614[22]][_0x5614[38]] = _0x5614[39];
+                onCard = true
+            }, 1000);
+            tempBtnText[_0x5614[41]] = _0x5614[42]
+        });
+        $(document)[_0x5614[26]](main());
+
+        function main() {
+            var _0x60ecx11 = false;
+            var onCard = false;
+            var _0x60ecx12 = {};
+            $(_0x5614[54])[_0x5614[55]](function(_0x60ecx13) {
+                $(_0x5614[54])[_0x5614[53]](_0x5614[52])
+            });
+            $(_0x5614[54])[_0x5614[85]](function() {
+                var _0x60ecx14 = $[_0x5614[58]]($(_0x5614[57])[_0x5614[56]]()),
+                    _0x60ecx15 = $[_0x5614[58]]($(_0x5614[59])[_0x5614[56]]()),
+                    _0x60ecx16 = $[_0x5614[58]]($(_0x5614[60])[_0x5614[56]]()),
+                    _0x60ecx17 = $[_0x5614[58]]($(_0x5614[61])[_0x5614[56]]()),
+                    _0x60ecx18 = $[_0x5614[58]]($(_0x5614[62])[_0x5614[56]]()),
+                    _0x60ecx19 = $[_0x5614[58]]($(_0x5614[63])[_0x5614[56]]()),
+                    _0x60ecx1a = $(_0x5614[66])[_0x5614[65]](_0x5614[64]);
+                var _0x60ecx1b = /^[a-zA-Zא-ת]+$/;
+                var _0x60ecx1c = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                var _0x60ecx1d = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+                var _0x60ecx1e = function(_0x60ecx1f) {
+                    console[_0x5614[25]](_0x60ecx1f);
+                    var _0x60ecx20 = _0x5614[44] + _0x60ecx1f + _0x5614[47];
+                    console[_0x5614[25]](_0x5614[67]);
+                    $(_0x60ecx20)[_0x5614[68]]();
+                    $(_0x5614[70])[_0x5614[69]]($(_0x60ecx20));
+                    $(_0x5614[44] + _0x60ecx1f)[_0x5614[72]](_0x5614[71]);
+                    $(_0x5614[44] + _0x60ecx1f)[_0x5614[53]](_0x5614[73]);
+                    _0x60ecx12[_0x60ecx1f] = _0x5614[27]
+                };
+                var _0x60ecx21 = function(_0x60ecx1f) {
+                    var _0x60ecx20 = _0x5614[44] + _0x60ecx1f + _0x5614[47];
+                    console[_0x5614[25]](_0x5614[74]);
+                    $(_0x60ecx20)[_0x5614[68]]();
+                    $(_0x5614[75])[_0x5614[69]]($(_0x60ecx20));
+                    $(_0x5614[44] + _0x60ecx1f)[_0x5614[72]](_0x5614[73]);
+                    $(_0x5614[44] + _0x60ecx1f)[_0x5614[53]](_0x5614[71]);
+                    _0x60ecx12[_0x60ecx1f] = $(_0x5614[44] + _0x60ecx1f)[_0x5614[56]]()
+                };
+                if (this[_0x5614[32]] !== _0x5614[76]) {
+                    if (this[_0x5614[32]] == _0x5614[77]) {
+                        console[_0x5614[25]](_0x5614[78] + this[_0x5614[79]]);
+                        _0x60ecx14 == _0x5614[27] || _0x60ecx14[_0x5614[20]] < 2 || _0x60ecx14[_0x5614[20]] >= 40 || !_0x60ecx1b[_0x5614[80]](_0x60ecx14) ? _0x60ecx1e(this[_0x5614[32]]) : _0x60ecx21(this[_0x5614[32]])
+                    };
+                    if (this[_0x5614[32]] == _0x5614[81]) {
+                        _0x60ecx15 == _0x5614[27] || _0x60ecx15[_0x5614[20]] < 2 || _0x60ecx15[_0x5614[20]] >= 40 || !_0x60ecx1b[_0x5614[80]](_0x60ecx15) ? _0x60ecx1e(this[_0x5614[32]]) : _0x60ecx21(this[_0x5614[32]])
+                    };
+                    if (this[_0x5614[32]] == _0x5614[82]) {
+                        _0x60ecx16 == _0x5614[27] || !_0x60ecx1c[_0x5614[80]](_0x60ecx16) ? _0x60ecx1e(this[_0x5614[32]]) : _0x60ecx21(this[_0x5614[32]])
+                    };
+                    if (this[_0x5614[32]] == _0x5614[83]) {
+                        !_0x60ecx1d[_0x5614[80]](_0x60ecx17) ? _0x60ecx1e(this[_0x5614[32]]) : _0x60ecx21(this[_0x5614[32]])
+                    };
+                    if (this[_0x5614[32]] == _0x5614[84]) {
+                        _0x60ecx17 !== _0x60ecx18 ? _0x60ecx1e(this[_0x5614[32]]) : _0x60ecx21(this[_0x5614[32]])
+                    }
+                };
+                let _0x60ecx22 = 0;
+                for (let _0x60ecx23 in _0x60ecx12) {
+                    _0x60ecx22 += _0x60ecx12[_0x60ecx23] ? 1 : 0
+                };
+                _0x60ecx11 = _0x60ecx22 >= 5 ? true : false;
+                console[_0x5614[25]](_0x60ecx11, _0x60ecx22)
+            });
+            $(_0x5614[97])[_0x5614[96]](function() {
+                $(_0x5614[86])[_0x5614[68]]();
+                console[_0x5614[25]](_0x5614[87] + agree[_0x5614[64]]);
+                if (_0x60ecx11) {
+                    if (!agree[_0x5614[64]]) {
+                        $(_0x5614[86])[_0x5614[89]](_0x5614[88])
+                    } else {
+                        _0x60ecx12[_0x5614[90]] = $[_0x5614[58]]($(_0x5614[63])[_0x5614[56]]());
+                        console[_0x5614[25]](_0x5614[91], _0x60ecx12);
+                        $(_0x5614[86])[_0x5614[89]](_0x5614[92]);
+                        setTimeout(function() {
+                            $(_0x5614[94])[_0x5614[93]]()
+                        }, 3000)
+                    }
+                } else {
+                    $(_0x5614[86])[_0x5614[89]](_0x5614[95])
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
